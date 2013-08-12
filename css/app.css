@@ -1,0 +1,29 @@
+ul.none
+{
+  list-style-type: none
+}
+
+li.plus:before{
+  content: "+";
+  padding-right: 5px;
+}
+
+li.minus:before{
+  content: "-";
+  padding-right: 5px;
+}
+
+.parse-unit {
+  overflow: scroll;
+  white-space: nowrap;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: medium;
+  font-weight: 200;
+  line-height: 10px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}

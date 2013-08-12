@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/app.css" >
+
+  </head>
+  <body ng-app="hl7Viewer">
+    <div class="container">
+      
+      <div ng-controller="HL7Controller">
+        
+        <div class="hero-unit">
+        <h2>HL7 Message Viewer</h2>
+        <textarea class="field span11" ng-model="message" placeholder="Paste HL7 message here" id="message" rows=15 cols=175>{{message}} </textarea> 
+        </div>
+       
+      
+      <div class="parse-unit">
+       <div ng-show="message.length">
+          
+         <ul class="none">
+           <li ng-class="{'plus': !show, 'minus': show};" ng-repeat="segment in segments" ng-click="show = !show">
+              <span style="font-size: medium;">{{$index+1}}: {{segment}}</span>
+           
+              <div ng-show="show" ng-init="show=0">
+                <ul class="none">
+                  <li ng-repeat="field in parse(segment)">
+                     <span styel="font-size: medium;">{{$index+1}}: {{field}}</span>
+                  </li>
+                </ul>
+              </div>
+           
+           </li>
+         </ul>
+
+        </div> 
+      </div>
+
+      </div> <!--end contoller -->
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/hl7.js"></script>
+  </body>
+</html>
