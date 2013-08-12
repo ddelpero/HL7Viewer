@@ -1,6 +1,6 @@
 Simple angular.js app to display a version 2.x HL7 message in a psuedo tree view. Parsing is only based on each segment split by \n and each field split by |.
 
-Sample Message
+# Sample Message
 
 ```
 MSH|^~\&|OBSERVER|L|L|L|20130507104632||ORU^R01|20130507104632215226|P|2.3|||AL|AL|
@@ -9,4 +9,5 @@ OBR|1|845439^GHH OE|1045813^GHH LAB|1554-5^GLUCOSE|||200202150730||||||||555-55-
 OBX|2|FN|1553-5^GLUCOSE^POST 12H CFST:MCNC:PT:SER/PLAS:QN||^182|mg/dl|70_105|H|||F
 ```
 
+# What it looks like
 ![](hl7viewer.png?raw=true)
