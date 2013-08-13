@@ -25,11 +25,15 @@
               <span style="font-size: medium;">{{$index+1}}: {{segment}}</span>
            
               <div ng-show="show" ng-init="show=0">
-                <ul class="none">
-                  <li ng-repeat="field in parse(segment)">
-                     <span styel="font-size: medium;">{{$index+1}}: {{field}}</span>
-                  </li>
-                </ul>
+                <table class="table table-condensed table-hover table-bordered">
+                  
+                  <tr ng-repeat="field in parse(segment)">
+                    <td >{{$index+1}}</td>
+                    <td >{{fieldName(segment, $index+1)}}</td> 
+                    <td >{{field}}</td>
+                  </tr>
+                </table>
+
               </div>
            
            </li>
