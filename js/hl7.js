@@ -23,6 +23,8 @@ function HL7Controller($scope) {
 		{
 		   fields = segment.split('|');
 		   segmentName = fields.shift();
+		   if (segmentName.toUpperCase() == "MSH")
+		   	   index = index + 1;
 		   return $scope.dictionary[segmentName][index];
 	    }
 	    catch(err)
