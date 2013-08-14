@@ -1,4 +1,4 @@
-Simple angular.js app to display a version 2.x HL7 message in a psuedo tree view. Parsing is only based on each segment split by \n and each field split by |.
+Simple Angularjs app to display a version 2.x HL7 message in a psuedo tree view. Parsing is only based on each segment split by \n and each field split by |.
 
 # Sample Message
 
