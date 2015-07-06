@@ -35,7 +35,35 @@ function HL7Controller($scope) {
 
 
 	$scope.dictionary = 
-	{ 	"EVN": {
+	{ 	"DG1": {
+			1: 'Set ID',
+			2: 'Diagnosis Coding Method',
+			3: 'Diagnosis Code',
+			4: 'Diagnosis Description',
+			5: 'Diagnosis Date/Time',
+			6: 'Diagnosis Type',
+			7: 'Major Diagnostic Category',
+			8: 'Diagnostic Related Group',
+			9: 'DRG Approval Indicator',
+			10: 'DRG Grouper Review Code',
+			11: 'Outlier Type',
+			12: 'Outlier Days',
+			13: 'Outlier Cost',
+			14: 'Grouper Version And Type',
+			15: 'Diagnosis Priority',
+			16: 'Diagnosing Clinician',
+			17: 'Diagnosis Classification',
+			18: 'Confidential Indicator',
+			19: 'Attestation Date/Time',
+			20: 'Diagnosis Identifier',
+			21: 'Diagnosis Action Code',
+			22: 'Parent Diagnosis',
+			23: 'DRG CCL Value Code',
+			24: 'DRG Grouping Usage',
+			25: 'DRG Diagnosis Determination Status',
+			26: 'Present On Admission'
+			},
+		"EVN": {
 			1: 'Event Type Code',
 			2: 'Recorded Date/Time',
 			3: 'Date/Time Planned Event',
